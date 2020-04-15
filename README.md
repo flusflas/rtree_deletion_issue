@@ -1,0 +1,1 @@
+Just a quick demo of a deletion issue using Rtree.
