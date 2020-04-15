@@ -88,7 +88,7 @@ def demo_delete():
             assert any(hit.object == country_name for hit in hits)
 
     # Remove geometry
-    geometry = shape(countries[country_id_to_remove][1])
+    geometry = countries[country_id_to_remove][1]
     for i, polygon in enumerate(get_polygons(geometry)):
         index.delete(country_uuids_to_remove[i], polygon.bounds)
 
